@@ -82,9 +82,9 @@ def main():
   }
 
   #load data into a DataFrame object:
-  df = pd.DataFrame(data, column_order=("col2"))
+  df = pd.DataFrame(data)
   
-  st.dataframe(df)
+  st.dataframe(df, column_order=("col2")))
 
   with st.form("Ark me a question:", clear_on_submit=True):
 
