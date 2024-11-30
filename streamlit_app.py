@@ -76,7 +76,15 @@ def main():
 
   st.subheader("Description of my small business", divider="violet")
 
+  data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+  }
 
+  #load data into a DataFrame object:
+  df = pd.DataFrame(data)
+  
+  st.dataframe(df)
 
   with st.form("Ask me a question:", clear_on_submit=True):
 
