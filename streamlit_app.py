@@ -52,7 +52,7 @@ def ask_me_a_question_form():
 
 
 
-  submitted = st.form_submit_button("Submit")
+  submitted = st.form_submit_button(label="ssbmit")
 
 
 
