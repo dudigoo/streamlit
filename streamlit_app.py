@@ -86,7 +86,7 @@ def main():
   
   st.dataframe(df)
 
-  with st.form("Ask me a question:", clear_on_submit=True):
+  with st.form("Ark me a question:", clear_on_submit=True):
 
     ask_me_a_question_form()
 
