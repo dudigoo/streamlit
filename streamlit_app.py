@@ -84,7 +84,7 @@ def main():
   #load data into a DataFrame object:
   df = pd.DataFrame(data)
   
-  st.dataframe(df, column_order=("col2")))
+  st.dataframe(df, column_order=("col2"))
 
   with st.form("Ark me a question:", clear_on_submit=True):
 
