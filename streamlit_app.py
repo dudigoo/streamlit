@@ -82,7 +82,7 @@ def main():
   }
 
   #load data into a DataFrame object:
-  df = pd.DataFrame(data)
+  df = pd.DataFrame(data, column_order=("col2"))
   
   st.dataframe(df)
 
