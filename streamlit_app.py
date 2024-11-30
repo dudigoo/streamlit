@@ -86,6 +86,18 @@ def main():
   
   st.dataframe(df, column_order=("col2"))
 
+  import numpy as np
+
+  chart_data = pd.DataFrame(
+    {
+        "col1": np.random.randn(20),
+        "col2": np.random.randn(20),
+        "col3": np.random.choice(["A", "B", "C"], 20),
+    }
+  )
+
+  st.line_chart(chart_data, x="col1", y="col2", color="col3")
+  
   with st.form("Ark me a question:", clear_on_submit=True):
 
     ask_me_a_question_form()
