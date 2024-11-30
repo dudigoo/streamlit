@@ -46,7 +46,7 @@ def ask_me_a_question_form():
 
   st.subheader("Ask me a question:")
 
-  description = st.text_area(label="A description of why you're reaching out, including any questions you have")
+  description = st.text_area(label="A description of wy you're reaching out, including any questions you have")
 
   email = st.text_input(label="What email can I reach you at?")
 
